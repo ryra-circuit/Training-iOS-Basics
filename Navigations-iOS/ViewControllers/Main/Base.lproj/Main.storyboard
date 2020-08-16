@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2oH-wR-yR7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="asq-Mz-j2k">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="dFR-Ys-khv" customClass="MainVC" customModule="Navigations_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1S-g5-POY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nA9-MB-DEr">
+                                <rect key="frame" x="20" y="494" width="374" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7j1-oy-re2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw2-Lp-3rI">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="40"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.74901960779999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Segue Direct Push">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1o9-1V-eI5" kind="show" id="x2Y-1O-Hf5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yk-He-MuT">
+                                                <rect key="frame" x="192" y="0.0" width="182" height="40"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.74901960779999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Segue Direct Present">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1o9-1V-eI5" kind="presentation" id="bxm-U6-dLz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0fP-N8-CbL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DZZ-zf-vMJ">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-qa-guA">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="40"/>
+                                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Direct Segue Push Other">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Zur-KZ-FSv" kind="show" identifier="ShowDetailsOtherSB" id="RXi-gl-AGm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2be-2H-na7">
+                                                <rect key="frame" x="192" y="0.0" width="182" height="40"/>
+                                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Indirect Segue Push Other">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pushToVCInOtherSBUSingSBReference:" destination="dFR-Ys-khv" eventType="touchUpInside" id="h9x-3o-0Uf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eLc-tS-xjc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-Xw-7pb">
+                                        <rect key="frame" x="0.0" y="100" width="374" height="160"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-Eh-CNo">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhF-FC-C8Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Segue Indirect Push">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pushWithIndirectSegue:" destination="dFR-Ys-khv" eventType="touchUpInside" id="mas-ei-gOJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acC-KN-bSC">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Segue Indirect Present">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="presenthWithIndirectSegue:" destination="dFR-Ys-khv" eventType="touchUpInside" id="380-bu-7df"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5rc-Mh-g9G"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0yV-Wg-0kC">
+                                                <rect key="frame" x="0.0" y="60" width="374" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6w-Fb-ggt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Code Push">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pushWithCode:" destination="dFR-Ys-khv" eventType="touchUpInside" id="SN8-Id-vr8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-GU-I9m">
+                                                        <rect key="frame" x="202" y="0.0" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Code Present">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="presentWithCode:" destination="dFR-Ys-khv" eventType="touchUpInside" id="erk-iL-k8F"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VOt-hq-6lf">
+                                                <rect key="frame" x="0.0" y="120" width="374" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q7-JR-XQU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Code Push Other">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pushWithCodeToVCInOtherSB:" destination="dFR-Ys-khv" eventType="touchUpInside" id="FHD-So-SjW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzJ-Bk-eKE">
+                                                        <rect key="frame" x="202" y="0.0" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Code Present Other">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="presentWithCodeToVCInOtherSB:" destination="dFR-Ys-khv" eventType="touchUpInside" id="GMf-md-GSZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="buT-bN-8Tk" firstAttribute="bottom" secondItem="nA9-MB-DEr" secondAttribute="bottom" constant="20" id="3GG-zq-M5x"/>
+                            <constraint firstItem="nA9-MB-DEr" firstAttribute="leading" secondItem="buT-bN-8Tk" secondAttribute="leading" constant="20" id="4oX-Iz-74t"/>
+                            <constraint firstItem="buT-bN-8Tk" firstAttribute="trailing" secondItem="nA9-MB-DEr" secondAttribute="trailing" constant="20" id="o1K-dE-6Yn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="buT-bN-8Tk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="Jk9-cR-4jQ"/>
+                    <connections>
+                        <segue destination="1o9-1V-eI5" kind="show" identifier="ShowDetailsWithPush" id="WGx-1h-tCP"/>
+                        <segue destination="1o9-1V-eI5" kind="presentation" identifier="ShowDetailsWithPresent" id="88X-bc-oIa"/>
+                        <segue destination="Zur-KZ-FSv" kind="show" id="WLl-RV-xGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sE-ZZ-rA0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ib6-ca-i4n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2oH-wR-yR7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Hid-F7-dwa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dFR-Ys-khv" kind="relationship" relationship="rootViewController" id="aqv-P3-21q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNe-yr-Jfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+        <!--InfoVC-->
+        <scene sceneID="ty6-kL-j6R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="InfoVC" id="Zur-KZ-FSv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BPq-Mz-Nii"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq5-ad-KlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="605"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="FLL-g3-KaN">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVC" id="1o9-1V-eI5" customClass="DetailsVC" customModule="Navigations_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlb-YP-8H7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-H8-RZn">
+                                <rect key="frame" x="20" y="20" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LJA-H8-RZn" firstAttribute="top" secondItem="BkA-H5-pUH" secondAttribute="top" constant="20" id="BlO-fe-Ycz"/>
+                            <constraint firstItem="LJA-H8-RZn" firstAttribute="leading" secondItem="vlb-YP-8H7" secondAttribute="leading" constant="20" id="ghy-fh-ubp"/>
+                            <constraint firstItem="BkA-H5-pUH" firstAttribute="trailing" secondItem="LJA-H8-RZn" secondAttribute="trailing" constant="20" id="nc6-6E-0cq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BkA-H5-pUH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="MZ8-GP-LSy"/>
+                    <connections>
+                        <outlet property="lblTitle" destination="LJA-H8-RZn" id="Kl3-h0-Ofa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSA-Rb-5aJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="254"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WGx-1h-tCP"/>
+        <segue reference="RXi-gl-AGm"/>
+    </inferredMetricsTieBreakers>
+</document>

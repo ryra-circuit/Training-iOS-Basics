@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwA-T2-Hpl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xXY-gf-iiB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a4O-lX-oTT">
+                                <rect key="frame" x="147" y="591.5" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4ch-HX-UEa"/>
+                                    <constraint firstAttribute="width" secondItem="a4O-lX-oTT" secondAttribute="height" multiplier="1:1" id="6VW-3d-V6j"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gaX-7b-XQv">
+                                <rect key="frame" x="103.5" y="344.5" width="207" height="207"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gaX-7b-XQv" secondAttribute="height" multiplier="1:1" id="x2f-85-0QC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gaX-7b-XQv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7lf-8a-RD3"/>
+                            <constraint firstAttribute="bottom" secondItem="xXY-gf-iiB" secondAttribute="bottom" id="GxN-f9-qsV"/>
+                            <constraint firstItem="a4O-lX-oTT" firstAttribute="top" secondItem="gaX-7b-XQv" secondAttribute="bottom" constant="40" id="J2b-xR-E6U"/>
+                            <constraint firstAttribute="trailing" secondItem="xXY-gf-iiB" secondAttribute="trailing" id="ZNS-TI-YBv"/>
+                            <constraint firstItem="xXY-gf-iiB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cRA-c5-Zqm"/>
+                            <constraint firstItem="gaX-7b-XQv" firstAttribute="width" secondItem="xXY-gf-iiB" secondAttribute="width" multiplier="0.5" id="d4Q-vv-YmJ"/>
+                            <constraint firstItem="xXY-gf-iiB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hnd-Nf-GZo"/>
+                            <constraint firstItem="gaX-7b-XQv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lo7-sa-jzQ"/>
+                            <constraint firstItem="a4O-lX-oTT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zJw-so-fAO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-699" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vr4-XH-rOM">
+            <objects>
+                <viewController id="mwA-T2-Hpl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bvr-ew-nFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training - iOS - Basics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU0-mA-6HD">
+                                <rect key="frame" x="40" y="430" width="334" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEl-s2-53i">
+                                <rect key="frame" x="164.5" y="778" width="85" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RYRA Circuit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K38-7s-Ro1">
+                                <rect key="frame" x="148" y="818" width="118" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cEl-s2-53i" firstAttribute="centerX" secondItem="K38-7s-Ro1" secondAttribute="centerX" id="5P0-5K-zAd"/>
+                            <constraint firstItem="K38-7s-Ro1" firstAttribute="centerX" secondItem="bvr-ew-nFe" secondAttribute="centerX" id="5Sc-B7-q1V"/>
+                            <constraint firstItem="OVL-gs-S7I" firstAttribute="bottom" secondItem="K38-7s-Ro1" secondAttribute="bottom" constant="20" id="U4j-VY-BlS"/>
+                            <constraint firstItem="GU0-mA-6HD" firstAttribute="centerX" secondItem="bvr-ew-nFe" secondAttribute="centerX" id="baz-gQ-w3U"/>
+                            <constraint firstItem="GU0-mA-6HD" firstAttribute="leading" secondItem="OVL-gs-S7I" secondAttribute="leading" constant="40" id="ecg-yI-39w"/>
+                            <constraint firstItem="GU0-mA-6HD" firstAttribute="centerY" secondItem="bvr-ew-nFe" secondAttribute="centerY" id="nK0-lH-QIO"/>
+                            <constraint firstItem="OVL-gs-S7I" firstAttribute="trailing" secondItem="GU0-mA-6HD" secondAttribute="trailing" constant="40" id="r0s-IW-QxA"/>
+                            <constraint firstItem="K38-7s-Ro1" firstAttribute="top" secondItem="cEl-s2-53i" secondAttribute="bottom" constant="20" id="rFr-Fp-0yF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OVL-gs-S7I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WZ-0u-SLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1499" y="375"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yoN-ke-6sz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ym6-mO-YW5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yoN-ke-6sz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="oRu-NJ-hap">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BW0-CZ-HmK" kind="relationship" relationship="rootViewController" id="y8e-Eb-g9V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gd6-JR-Qu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="xIA-Ag-uba">
+            <objects>
+                <viewController storyboardIdentifier="InfoVC" id="BW0-CZ-HmK" customClass="InfoVC" customModule="Navigations_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zca-eY-wQv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-7E-Zo6">
+                                <rect key="frame" x="20" y="20" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sll-7E-Zo6" firstAttribute="leading" secondItem="q4H-2f-rAc" secondAttribute="leading" constant="20" id="1YQ-vH-mNn"/>
+                            <constraint firstItem="q4H-2f-rAc" firstAttribute="trailing" secondItem="Sll-7E-Zo6" secondAttribute="trailing" constant="20" id="RkS-TM-ab7"/>
+                            <constraint firstItem="Sll-7E-Zo6" firstAttribute="top" secondItem="q4H-2f-rAc" secondAttribute="top" constant="20" id="mb8-Z0-kkK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q4H-2f-rAc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="0kK-EX-gnQ"/>
+                    <connections>
+                        <outlet property="lblTitle" destination="Sll-7E-Zo6" id="3g0-V8-vKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VU-Fl-1xd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="120"/>
+        </scene>
+    </scenes>
+</document>
