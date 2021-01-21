@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwA-T2-Hpl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwA-T2-Hpl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,13 +80,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn from the scratch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JE-7n-efA">
+                                <rect key="frame" x="20" y="486" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cEl-s2-53i" firstAttribute="centerX" secondItem="K38-7s-Ro1" secondAttribute="centerX" id="5P0-5K-zAd"/>
                             <constraint firstItem="K38-7s-Ro1" firstAttribute="centerX" secondItem="bvr-ew-nFe" secondAttribute="centerX" id="5Sc-B7-q1V"/>
+                            <constraint firstItem="OVL-gs-S7I" firstAttribute="trailing" secondItem="2JE-7n-efA" secondAttribute="trailing" constant="20" id="9g8-AL-URb"/>
+                            <constraint firstItem="2JE-7n-efA" firstAttribute="top" secondItem="GU0-mA-6HD" secondAttribute="bottom" constant="20" id="T7L-LB-ETh"/>
                             <constraint firstItem="OVL-gs-S7I" firstAttribute="bottom" secondItem="K38-7s-Ro1" secondAttribute="bottom" constant="20" id="U4j-VY-BlS"/>
                             <constraint firstItem="GU0-mA-6HD" firstAttribute="centerX" secondItem="bvr-ew-nFe" secondAttribute="centerX" id="baz-gQ-w3U"/>
+                            <constraint firstItem="2JE-7n-efA" firstAttribute="leading" secondItem="bvr-ew-nFe" secondAttribute="leading" constant="20" id="dRI-Fx-8NY"/>
                             <constraint firstItem="GU0-mA-6HD" firstAttribute="leading" secondItem="OVL-gs-S7I" secondAttribute="leading" constant="40" id="ecg-yI-39w"/>
                             <constraint firstItem="GU0-mA-6HD" firstAttribute="centerY" secondItem="bvr-ew-nFe" secondAttribute="centerY" id="nK0-lH-QIO"/>
                             <constraint firstItem="OVL-gs-S7I" firstAttribute="trailing" secondItem="GU0-mA-6HD" secondAttribute="trailing" constant="40" id="r0s-IW-QxA"/>
